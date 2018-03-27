@@ -8,13 +8,14 @@ p {
     margin-left: 5%;
     margin-right: 15%;
     padding: 20px;
-    width: 80%;
-    height: 60%;
+    width:auto;
+    height:auto;
     position: relative;
     border: 3px solid;
     border-color: black;
     background-color: purple;
     color: rgba(255, 223, 52, 0.96);
+    text-align: center;
 }
 
 html {
@@ -33,14 +34,21 @@ html {
     color: rgba(255, 223, 52, 0.96);
 }
 
+header nav li{ 
+    list-style-type: none;}
+
 a {
-    color: darkviolet;
+    color: rgba(148, 0, 211, 0.95);
     text-transform: capitalize;
     text-decoration-style: solid;
     text-decoration-line: underline;
     text-underline-position: below;
     text-align: left;
-    Transition: 
+    Transition: background .3s color .3s;
+}
+
+a:hover{
+    color: rgba(196, 143, 219, 0.82);
 }
 
 .pagetitle{
@@ -55,11 +63,17 @@ a {
     display: flex;
     flex-direction: column;
 }
-.mainsection1 {
+
+.mainsectionformat {
     display:flex;
     flex-direction: row;
 }
 
 .mainsection1-item1 {
-    flex-basis: 60%
+    flex-basis: 60%;
+    align-content: center;
+    object-position:center;
+    position: relative;
+    
 }
+
